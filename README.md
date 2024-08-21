@@ -18,7 +18,7 @@ Methology:
      * dataset are checked for empty columns/rows to avoid error in generation of models.Rows with NA and infinity values are replaced with global constants/removed.
      * Dimensionality Reduction: purpose to reduce the complexity of model which increase by exponential times.
      * The process involues computing the variance of features and eliminated by mini,zero variance.
-     * The features "exadrr","engine_type", 'src_mask', 'dst_mask', 'src_ac', and 'dst_as' were eliminated due to their variance being computed as 0 indicating no variation across             malicious and benign flows
+     * The features "exadrr","engine_type", 'src_mask', 'dst_mask', 'src_ac', and 'dst_as' were eliminated due to their variance being computed as 0 indicating no variation across malicious and benign flows
      * Additionally, "unix_secs", 'unix_nsecs', 'sysuptime', 'first', and 'last' were removed to mitigate bias in the models introduced by temporal factors.
      * Finally, the 'nexthop' feature was excluded from the dataset due to its negative impact on the detection of malicious traffic in wide area networks.
 
@@ -29,5 +29,5 @@ Methology:
 
 (iii) Algorithm Implementation:
 
-            * Algorithm: KNN, logistic Regression(LR),linear SVC, Perceptron with SGD and                     Random Forest(RF), Ensembled Technique(Voting Classifier)
-            * Model Training: Partitioned Dataset into 80% for training and 20% for testing,                  Evaluated based on Accuracy of the model as well as with Minimal Execution time.
+            * Algorithm: KNN, logistic Regression(LR),linear SVC, Perceptron with SGD and Random Forest(RF), Ensembled Technique(Voting Classifier)
+            * Model Training: Partitioned Dataset into 80% for training and 20% for testing, Evaluated based on Accuracy of the model as well as with Minimal Execution time.
